@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "@firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBisXI4nDpKH41h03BeU_6QKPffCYfsa-4",
-  authDomain: "attireflow.firebaseapp.com",
-  projectId: "attireflow",
-  storageBucket: "attireflow.appspot.com",
-  messagingSenderId: "520840453340",
-  appId: "1:520840453340:web:2820c7068e077ea54d6819",
-  measurementId: "G-81XQ176ZLC",
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_ID,
+  appId: import.meta.env.VITE_APP_ID,
+  measurementId: import.meta.env.VITE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
