@@ -1,5 +1,35 @@
+h1 {
+  font-size: 3.4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
 .hero_section {
-  height: 50vh;
+  height: 100dvh;
+  padding: 15rem 5%;
+}
+
+.hero_section > * {
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 482px) {
+  h1 {
+    font-size: 5rem;
+  }
+  .hero_section {
+    padding: 5rem 2rem;
+  }
+
+  .hero_section > * {
+    margin-bottom: 70px;
+  }
+
+  .hero_section p {
+    font-size: 1.2rem;
+  }
 }
 
 
@@ -7,15 +37,37 @@
   display: flex;
 }
 
-.stats:first-child {
-  padding-left: 0;
+.stats div h2 {
+  margin-bottom: 15px;
+}
+
+.stats > :nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-right: 20px;
 }
 
 .stats > :nth-child(3),
 .stats > :nth-child(5) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0 20px;
 }
 
+.stats hr {
+  border: 1.2px solid #085cb2;
+}
 
 
+.hero_btn {
+  background-color: #085cb2;
+  width: 163px;
+  height: 41px;
+  border-radius: 10px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}

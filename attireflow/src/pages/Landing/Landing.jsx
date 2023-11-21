@@ -8,23 +8,23 @@ function Landing() {
           Discover Your Heritage In <br /> Every Thread
         </h1>
         <p>
-          Step into a world where tradition and fashion unite. Our native attire
-          collections celebrate culture with style.
+          Step into a world where tradition and <br />fashion unite. Our native attire
+          collections <br /> celebrate culture with style.
         </p>
-        <button>Shop Now</button>
+        <button className={classes.hero_btn}>Shop Now</button>
         <div className={classes.stats}>
           <div>
-            <h1>75m+</h1>
+            <h2>75m+</h2>
             <p>Customers</p>
           </div>
           <hr />
           <div>
-            <h1>20+</h1>
+            <h2>20+</h2>
             <p>Stores</p>
           </div>
           <hr />
           <div>
-            <h1>200K+</h1>
+            <h2>200K+</h2>
             <p>Monthly visits</p>
           </div>
         </div>
