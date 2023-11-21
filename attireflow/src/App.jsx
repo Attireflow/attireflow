@@ -6,12 +6,12 @@ import {Footer, Nav, Home} from "./components";
 
 
 function App() {
-
+  
   return (
     <>
       <Routes>
-        <Route path='/' element={<Nav/>}>
-          <Route index element={<Home/>}/>
+        <Route path='/' element={<Nav />}>
+          <Route index element={<Home />}/>
 
         </Route>
       </Routes>

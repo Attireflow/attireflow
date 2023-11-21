@@ -4,6 +4,7 @@ import Nav_css from "./Nav.module.css";
 
 function Nav() {
   const [navOpen, setNavOpen] = useState(false);
+  
 
   const closeNav = () => {
     setNavOpen(false);
@@ -23,7 +24,13 @@ function Nav() {
         <box-icon name="menu" onClick={openNav}></box-icon>
       </div>
 
-      <div className={navOpen ? Nav_css.open_nav : Nav_css.close_nav}>
+      <div
+        className={
+          navOpen
+            ? `${Nav_css.nav_container} ${Nav_css.open_nav}`
+            : Nav_css.nav_container
+        }
+      >
         <div>
           <box-icon name="x" onClick={closeNav}></box-icon>
         </div>
@@ -64,7 +71,16 @@ function Nav() {
       </div>
 
       {/*Desktop View*/}
-      <div className={Nav_css.desktop_nav}>
+      <div
+        className={Nav_css.desktop_nav}
+        style={{
+          backgroundColor: "transparent",
+          position: "absolute",
+          top: 0,
+          right: 0,
+          left: 0,
+        }}
+      >
         <div className={Nav_css.nav_contents}>
           <h1>ATTIREFLOW</h1>
           <ul>

@@ -41,7 +41,7 @@
     height: 20px;
 }
 
-.close_nav {
+.nav_container {
   display: none;
 }
 
@@ -55,22 +55,7 @@
 
 /*Media query which handles the navigation of the mobile view of the application*/
 @media only screen and (max-width: 482px) {
-    .open_nav {
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgb(255, 255, 255);
-        backdrop-filter: blur(0.3rem);
-        transition: transform 600ms ease-out;
-        transform: translateX(-0%);
-        z-index: 9999;
-        padding: 10px;
-    }
-
-    .close_nav {
+    .nav_container {
         display: block;
         position: fixed;
         top: 0;
@@ -81,7 +66,12 @@
         backdrop-filter: blur(0.3rem);
         transition: transform 600ms ease-out;
         transform: translateX(100%);
+        z-index: 9999;
         padding: 10px;
+    }
+
+    .open_nav {
+        transform: translateX(-0%);
     }
 
 
