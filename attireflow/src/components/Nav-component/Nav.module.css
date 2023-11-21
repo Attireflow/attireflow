@@ -1,7 +1,7 @@
 
-.nav {
+.desktop_nav {
     padding: 4% 5%;
-    height: 250px;
+    height: 10rem;
 }
 
 .nav_contents {
@@ -9,7 +9,8 @@
     align-items: center;
 }
 
-.nav_contents h1 {
+.nav_contents h1,
+.open_icon h1 {
     font-size: 2rem;
 }
 
@@ -34,13 +35,72 @@
     align-items: center;
 }
 
-.box_icon {
-    cursor: pointer;
-}
-
 .nav_icons hr {
     border-color: #5295d8;
     margin: 0 10%;
     height: 20px;
+}
+
+.close_nav {
+  display: none;
+}
+
+.mobile_list {
+    list-style: none;
+}
+
+.open_icon {
+    display: none;
+}
+
+/*Media query which handles the navigation of the mobile view of the application*/
+@media only screen and (max-width: 482px) {
+    .open_nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(255, 255, 255);
+        backdrop-filter: blur(0.3rem);
+        transition: transform 600ms ease-out;
+        transform: translateX(-0%);
+        z-index: 9999;
+        padding: 10px;
+    }
+
+    .close_nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(255, 255, 255);
+        backdrop-filter: blur(0.3rem);
+        transition: transform 600ms ease-out;
+        transform: translateX(100%);
+        padding: 10px;
+    }
+
+
+    .open_icon {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .desktop_nav {
+        display: none;
+    }
+
+    /*used to ensure support on multiple browsers*/
+    @supports (inset: 0 0 0 0) {
+        .nav-container {
+        inset: 0 0 0 0;
+        }
+    }
 }
 
