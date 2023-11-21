@@ -41,6 +41,10 @@ footer {
   background-color: #085cb2;
 }
 
+.product-background {
+  background-color: #D6EAFF;
+}
+
 .header-background {
   background-image: url(assets/ankara.png);
   background-position: center;

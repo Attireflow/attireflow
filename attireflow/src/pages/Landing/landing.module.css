@@ -6,8 +6,12 @@ h2 {
   font-size: 3rem;
 }
 
+h3 {
+  font-size: 2.5rem;
+}
+
 .hero_section {
-  height: 100dvh;
+  height: 100svh;
   padding: 15rem 5%;
 }
 
@@ -71,3 +75,45 @@ h2 {
   cursor: pointer;
   border: none;
 }
+
+.collection_section {
+  padding: 4% 5%;
+}
+
+.collection_section h3 {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.collections {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collection_product {
+  width: 47%;
+  height: 19rem;
+  border-radius: 15px;
+  padding: 10px 0;
+  margin-bottom: 5rem;
+}
+
+.collection_product p {
+  margin: 20px;
+}
+
+.mid_collection {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 482px) {
+  .collection_product {
+    width: 32rem;
+    margin-bottom: 20px;
+  }
+  .collections {
+    flex-direction: column;
+    align-items: center;
+  }
+} 
