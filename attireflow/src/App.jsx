@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "boxicons";
 import AppRoutes from "./routes";
 
