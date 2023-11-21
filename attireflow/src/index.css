@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700;800&family=Lora:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700;800&family=Inter:wght@300;400;500&family=Lora:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700;800&family=Lora:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700;800&family=Inter:wght@300;400;500&family=Lora:wght@400;500&display=swap");
 
 * {
   margin: 0;
@@ -12,29 +12,33 @@ html {
   font-size: 1rem;
 }
 
-@media only screen and (max-width: 768px)  {
-    html {
-        font-size: .7rem;
-    }
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 0.7rem;
+  }
 }
 
-h1,h2,h3,h4 {
-  font-family: 'Crimson Pro', serif;
-  color: #085CB2;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Crimson Pro", serif;
+  color: #085cb2;
 }
 
-h5,h6 {
-  font-family: 'Inter', sans-serif;
-  color: #085CB2;
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+  color: #085cb2;
 }
 
 p {
-  font-family: 'Lora', serif;
-  color: #085CB2;
+  font-family: "Lora", serif;
+  color: #085cb2;
 }
 
 footer {
-  background-color: #085CB2;
+  background-color: #085cb2;
 }
 
 .header-background {
@@ -43,5 +47,3 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
