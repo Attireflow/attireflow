@@ -1,0 +1,46 @@
+
+.nav {
+    padding: 4% 5%;
+    height: 250px;
+}
+
+.nav_contents {
+    display: flex;
+    align-items: center;
+}
+
+.nav_contents h1 {
+    font-size: 2rem;
+}
+
+.nav_contents ul {
+    display: flex;
+    margin: 0 auto;
+    width: min(50%, 500px);
+    list-style: none;
+}
+
+.nav_contents ul li {
+    margin: 0 5%;
+    cursor: pointer;
+}
+
+.nav_contents ul li p {
+    font-size: 1rem;
+}
+
+.nav_icons  {
+    display: flex;
+    align-items: center;
+}
+
+.box_icon {
+    cursor: pointer;
+}
+
+.nav_icons hr {
+    border-color: #5295d8;
+    margin: 0 10%;
+    height: 20px;
+}
+
