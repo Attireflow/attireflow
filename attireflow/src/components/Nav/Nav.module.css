@@ -2,6 +2,11 @@
 .desktop_nav {
     padding: 4% 5%;
     height: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
 }
 
 .nav_contents {

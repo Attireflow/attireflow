@@ -1,3 +1,21 @@
 .hero_section {
   height: 50vh;
 }
+
+
+.stats {
+  display: flex;
+}
+
+.stats:first-child {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.stats > :nth-child(3),
+.stats > :nth-child(5) {
+  padding: 0 20px;
+}
+
+
+
