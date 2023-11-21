@@ -1,3 +1,4 @@
+import "boxicons";
 import AppRoutes from "./routes";
 
 function App() {
