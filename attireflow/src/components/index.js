@@ -1,3 +1,2 @@
-export { default as Footer } from "./Footer";
-export { default as Nav } from "./Nav-component/Nav";
-export { default as Home } from "./Home-component/Home";
+export { default as Footer } from "./Footer/Footer";
+export { default as Nav } from "./Nav/Nav";
