@@ -1,19 +1,17 @@
-import React, { useState } from 'react'
-import { Outlet, Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Outlet, Link } from "react-router-dom";
 import Nav_css from "./Nav.module.css";
 
 function Nav() {
   const [navOpen, setNavOpen] = useState(false);
-  
 
   const closeNav = () => {
     setNavOpen(false);
-  }
+  };
 
   const openNav = () => {
     setNavOpen(true);
-  }
-
+  };
 
   return (
     <nav>
@@ -116,10 +114,9 @@ function Nav() {
           </div>
         </div>
       </div>
-
-      <Outlet />
     </nav>
   );
 }
 
 export default Nav;
+
