@@ -1,12 +1,9 @@
+import { RouterProvider } from "react-router-dom";
 import "boxicons";
-import AppRoutes from "./routes";
+import router from "./routes";
 
 function App() {
-  return (
-    <>
-      <AppRoutes />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
