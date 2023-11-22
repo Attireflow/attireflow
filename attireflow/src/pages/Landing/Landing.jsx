@@ -1,4 +1,5 @@
 import classes from "./landing.module.css";
+import products from "./products";
 
 function Landing() {
   return (
@@ -59,6 +60,58 @@ function Landing() {
             <p>Checkers Cashmere Attire</p>
             <p>500+</p>
           </div>
+        </div>
+      </div>
+      <div className={classes.product_section}>
+        <h3>Several unique attires are new in stock</h3>
+        <div className={classes.products}>
+          {products.map((item) => {
+            const { image, name, price, rate, id } = item;
+            return (
+              <div className={classes.product} key={id}>
+                {/* <img src={image} alt="product" /> */}
+                <div className={`${classes.product_img}`}>
+                  <img src={image} alt="product" />
+                  <div className={classes.heart}>
+                    <box-icon name="heart" color="#085cb2"></box-icon>
+                  </div>
+                </div>
+                <p>{name}</p>
+                <p>&#x20A6; {price}</p>
+
+                <div className={classes.rates}>
+                  {Array.from([...Array(5)], () => {
+                    return (
+                      <p>
+                        <box-icon
+                          name="star"
+                          type="solid"
+                          color="orange"
+                        ></box-icon>
+                      </p>
+                    );
+                  })
+                    .splice(0, rate)
+                    .concat(
+                      [...Array(5 - rate)].map(() => {
+                        return (
+                          <p>
+                            <box-icon
+                              name="star"
+                              type="solid"
+                              color="#D6EAFF"
+                            ></box-icon>
+                          </p>
+                        );
+                      })
+                    )}
+                </div>
+
+                {/* <box-icon name="star" type="solid" color="orange"></box-icon> */}
+                <button className={classes.product_btn}>Shop Now</button>
+              </div>
+            );
+          })}
         </div>
       </div>
     </main>
