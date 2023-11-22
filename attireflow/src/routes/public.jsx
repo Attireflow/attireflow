@@ -4,15 +4,15 @@ import Contact from "pages/Contact/Contact";
 
 export const publicRoutes = [
   {
-    path: "/products",
+    path: "products",
     element: <Product />,
   },
   {
-    path: "/checkout",
+    path: "checkout",
     element: <Checkout />,
   },
   {
-    path: "/contact-us",
+    path: "contact-us",
     element: <Contact />,
   },
 ];
