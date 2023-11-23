@@ -12,6 +12,12 @@
   --fw-medium: 500;
   --fw-semi-bold: 600;
   --fw-bold: 700;
+
+  /* Font Families */
+  --ff-lora: "Lora", serif;
+  --ff-crimson-pro: "Crimson Pro", serif;
+  --ff-crimson-text: "Crimson Text", serif;
+  --ff-inter: "Inter", serif;
 }
 
 * {
@@ -24,6 +30,13 @@ body {
   min-height: 100vh;
   font-weight: 400;
   font-size: 1rem;
+  color: var(--brand-color-1);
+  line-height: 1.2;
+}
+
+#root {
+  width: 100%;
+  max-width: 1440px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -48,7 +61,11 @@ h6 {
 
 p {
   font-family: "Lora", serif;
-  color: #085cb2;
+  color: inherit;
+}
+
+li {
+  list-style: none;
 }
 
 footer {
