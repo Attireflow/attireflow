@@ -4,6 +4,7 @@ import shippingTruck from "assets/shipping_truck.svg";
 import customerSupport from "assets/customer_support.svg";
 import qualityTag from "assets/quality_tag.svg";
 import paymentCard from "assets/payment_card.svg";
+import reviewImg from "assets/review_image.png";
 
 function Landing() {
   return (
@@ -84,9 +85,9 @@ function Landing() {
                 <p>&#x20A6; {price}</p>
 
                 <div className={classes.rates}>
-                  {Array.from([...Array(5)], () => {
+                  {Array.from([...Array(5)], (_, i) => {
                     return (
-                      <p>
+                      <p key={i}>
                         <box-icon
                           name="star"
                           type="solid"
@@ -97,9 +98,9 @@ function Landing() {
                   })
                     .splice(0, rate)
                     .concat(
-                      [...Array(5 - rate)].map(() => {
+                      [...Array(5 - rate)].map((_, i) => {
                         return (
-                          <p>
+                          <p key={i}>
                             <box-icon
                               name="star"
                               type="solid"
@@ -119,7 +120,9 @@ function Landing() {
         </div>
       </div>
       <div className={classes.services_section}>
-        <h3>What Makes Us the Preferred <br /> Choice?</h3>
+        <h3>
+          What Makes Us the Preferred <br /> Choice?
+        </h3>
         <div className={classes.service_group}>
           <div className={classes.service}>
             <img src={shippingTruck} alt="shipping truck" />
@@ -136,6 +139,26 @@ function Landing() {
           <div className={classes.service}>
             <img src={customerSupport} alt="shipping truck" />
             <h3>24/7 SUPPORT</h3>
+          </div>
+        </div>
+      </div>
+      <div className={classes.review_section}>
+        <h3>What Our Customers are Saying</h3>
+        <div className={classes.reviews}>
+          <h5>Customers Reviews</h5>
+          <div className={classes.review}>
+            <img src={reviewImg} alt="review" />
+            <span>
+              <p>
+                I recently purchased some beautiful native attire from
+                attireflow, and I couldn't be happier with my experience! The
+                selection they offer is impressive, and I was able to find the
+                perfect outfit for a special event. The quality of the attire
+                exceeded my expectations, and it was evident that attention to
+                detail and craftsmanship went into its creation.
+              </p>
+              <h6>Amanda Olaogun</h6>
+            </span>
           </div>
         </div>
       </div>

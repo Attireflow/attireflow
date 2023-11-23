@@ -82,7 +82,8 @@ h3 {
 
 .collection_section h3, 
 .product_section h3,
-.services_section h3 {
+.services_section h3,
+.review_section h3 {
   text-align: center;
   margin: 40px 0;
 }
@@ -229,6 +230,58 @@ h3 {
 
   .service img {
     width: 40%;
+  }
+}
+
+.review_section {
+  padding: 0 5% 0 5%;
+  margin-top: 80px;
+}
+
+.review_section h5 {
+  font-size: 1.3rem;
+}
+
+.review_section h6 {
+  font-size: 1rem;
+  margin: 30px 0;
+}
+
+.reviews {
+  border: 1px solid #085CB2;
+  border-radius: 30px;
+  padding: 80px;
+  width: min(90%, 1000px);
+  margin: 0 auto;
+}
+
+.reviews h5 {
+  text-align: center;
+}
+
+.reviews p, .reviews h6 {
+  text-align: left;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-top: 30px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .reviews {
+    padding: 10px;
+  }
+  .reviews p, .reviews h6 {
+    text-align: center;
+  }
+  .review {
+    flex-direction: column;
+    gap: 50px;
   }
 }
 
