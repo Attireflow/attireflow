@@ -1,5 +1,9 @@
 import classes from "./landing.module.css";
 import products from "./products";
+import shippingTruck from "assets/shipping_truck.svg";
+import customerSupport from "assets/customer_support.svg";
+import qualityTag from "assets/quality_tag.svg";
+import paymentCard from "assets/payment_card.svg";
 
 function Landing() {
   return (
@@ -112,6 +116,27 @@ function Landing() {
               </div>
             );
           })}
+        </div>
+      </div>
+      <div className={classes.services_section}>
+        <h3>What Makes Us the Preferred <br /> Choice?</h3>
+        <div className={classes.service_group}>
+          <div className={classes.service}>
+            <img src={shippingTruck} alt="shipping truck" />
+            <h3>SECURE SHIPPING</h3>
+          </div>
+          <div className={classes.service}>
+            <img src={paymentCard} alt="shipping truck" />
+            <h3>EASY PAYMENT</h3>
+          </div>
+          <div className={classes.service}>
+            <img src={qualityTag} alt="shipping truck" />
+            <h3>QUALITY ATTIRES</h3>
+          </div>
+          <div className={classes.service}>
+            <img src={customerSupport} alt="shipping truck" />
+            <h3>24/7 SUPPORT</h3>
+          </div>
         </div>
       </div>
     </main>
