@@ -9,30 +9,32 @@ import reviewImg from "assets/review_image.png";
 function Landing() {
   return (
     <main className={classes.home}>
-      <div className={`${classes.hero_section} header-background`}>
-        <h1>
-          Discover Your Heritage In <br /> Every Thread
-        </h1>
-        <p>
-          Step into a world where tradition and <br />
-          fashion unite. Our native attire collections <br /> celebrate culture
-          with style.
-        </p>
-        <button className={classes.hero_btn}>Shop Now</button>
-        <div className={classes.stats}>
-          <div>
-            <h2>75m+</h2>
-            <p>Customers</p>
-          </div>
-          <hr />
-          <div>
-            <h2>20+</h2>
-            <p>Stores</p>
-          </div>
-          <hr />
-          <div>
-            <h2>200K+</h2>
-            <p>Monthly visits</p>
+      <div className="header-background">
+        <div className={`${classes.hero_section}`}>
+          <h1>
+            Discover Your Heritage In <br /> Every Thread
+          </h1>
+          <p>
+            Step into a world where tradition and <br />
+            fashion unite. Our native attire collections <br /> celebrate
+            culture with style.
+          </p>
+          <button className={classes.hero_btn}>Shop Now</button>
+          <div className={classes.stats}>
+            <div>
+              <h2>75m+</h2>
+              <p>Customers</p>
+            </div>
+            <hr />
+            <div>
+              <h2>20+</h2>
+              <p>Stores</p>
+            </div>
+            <hr />
+            <div>
+              <h2>200K+</h2>
+              <p>Monthly visits</p>
+            </div>
           </div>
         </div>
       </div>
@@ -74,7 +76,6 @@ function Landing() {
             const { image, name, price, rate, id } = item;
             return (
               <div className={classes.product} key={id}>
-                {/* <img src={image} alt="product" /> */}
                 <div className={`${classes.product_img}`}>
                   <img src={image} alt="product" />
                   <div className={classes.heart}>
@@ -111,8 +112,6 @@ function Landing() {
                       })
                     )}
                 </div>
-
-                {/* <box-icon name="star" type="solid" color="orange"></box-icon> */}
                 <button className={classes.product_btn}>Shop Now</button>
               </div>
             );
@@ -160,6 +159,28 @@ function Landing() {
               <h6>Amanda Olaogun</h6>
             </span>
           </div>
+        </div>
+      </div>
+      <div className={classes.about_section}>
+        <div className={classes.about_headers}>
+          <h1>ABOUT US</h1>
+          <h2>Who we are and what we stand for</h2>
+        </div>
+        <div className={classes.about_paragraph}>
+          <p>
+            At Attireflow, we are passionate about celebrating cultural
+            diversity through fashion. Our mission is to provide authentic and
+            high-quality native attire that honors traditions and craftsmanship
+            from around the world. <br /> <br /> <br /> With a commitment to preserving
+            heritage, we curate a collection that reflects the beauty, elegance,
+            and uniqueness of each culture's attire. We take pride in delivering
+            a seamless shopping experience, making it easy for you to explore
+            and embrace the world's rich clothing traditions. <br /> <br /> <br /> Join
+            us on this journey of cultural appreciation, and let us be your
+            gateway to the global tapestry of fashion. <br /> <br /> <br />Thank you
+            for choosing Attireflow as your destination for meaningful and
+            stylish attire.
+          </p>
         </div>
       </div>
     </main>

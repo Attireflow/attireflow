@@ -10,9 +10,31 @@ h3 {
   font-size: 2.5rem;
 }
 
+.collection_section,
+.product_section,
+.services_section,
+.review_section,
+.about_section {
+  width: 90%;
+  margin: 90px auto;
+}
+
+.collection_section h3, 
+.product_section h3,
+.services_section h3,
+.review_section h3,
+.about_section h3 {
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* HERO SECTION */
+
 .hero_section {
   height: 100svh;
-  padding: 15rem 5%;
+  width: 90%;
+  margin: 0 auto;
+  padding: 12rem 0;
 }
 
 .hero_section > * {
@@ -24,11 +46,11 @@ h3 {
     font-size: 5rem;
   }
   .hero_section {
-    padding: 5rem 2rem;
+    padding: 2rem 0;
   }
 
   .hero_section > * {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
 
   .hero_section p {
@@ -76,17 +98,8 @@ h3 {
   border: none;
 }
 
-.collection_section {
-  padding: 0 5% 0 5%;
-}
 
-.collection_section h3, 
-.product_section h3,
-.services_section h3,
-.review_section h3 {
-  text-align: center;
-  margin: 40px 0;
-}
+/* COLLECTION SECTION */
 
 .collections {
   display: flex;
@@ -122,15 +135,14 @@ h3 {
 } 
 
 
-.product_section {
-  padding: 0 5% 0 5%;
-}
+
+/* PRODUCT SECTION */
 
 .products {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /*3 columns */
   grid-template-rows: repeat(2, auto); /*2 rows */
-  gap: 50px;
+  gap: 30px;
   justify-content: center;
 
 }
@@ -198,10 +210,7 @@ h3 {
 }
 
 
-.services_section {
-  padding: 0 5% 0 5%;
-  margin-top: 80px;
-}
+/* SERVICE SECTION */
 
 .service_group {
   display: grid;
@@ -233,10 +242,9 @@ h3 {
   }
 }
 
-.review_section {
-  padding: 0 5% 0 5%;
-  margin-top: 80px;
-}
+ 
+
+/* REVIEWS SECTION */
 
 .review_section h5 {
   font-size: 1.3rem;
@@ -251,7 +259,7 @@ h3 {
   border: 1px solid #085CB2;
   border-radius: 30px;
   padding: 80px;
-  width: min(90%, 1000px);
+  width: min(90%, 1240px);
   margin: 0 auto;
 }
 
@@ -282,6 +290,51 @@ h3 {
   .review {
     flex-direction: column;
     gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .review img {
+    width: 90%;
+  }
+}
+
+.about_headers {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about_headers h1 {
+  font-size: 10rem;
+  -webkit-text-stroke: 3px #085cb2;
+  color: transparent; 
+  opacity: 0.2;
+}
+
+.about_headers h2 {
+  position: absolute;
+  font-size: 2.5rem;
+  padding-top: 20px;
+}
+
+.about_paragraph {
+  padding: 70px;
+}
+
+.about_paragraph p {
+  color: #2F8CED;
+}
+
+@media only screen and (max-width: 428px) {
+  .about_headers h1 {
+    font-size: 7rem;
+  }
+
+  .about_paragraph {
+    padding: 30px;
   }
 }
 
