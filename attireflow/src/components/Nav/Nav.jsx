@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Nav_css from "./Nav.module.css";
 
 function Nav() {
@@ -71,13 +71,6 @@ function Nav() {
       {/*Desktop View*/}
       <div
         className={Nav_css.desktop_nav}
-        style={{
-          backgroundColor: "transparent",
-          position: "absolute",
-          top: 0,
-          right: 0,
-          left: 0,
-        }}
       >
         <div className={Nav_css.nav_contents}>
           <h1>ATTIREFLOW</h1>

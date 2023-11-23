@@ -27,7 +27,6 @@
 }
 
 body {
-  width: 100vw;
   min-height: 100vh;
   font-weight: 400;
   font-size: 1rem;
@@ -71,6 +70,10 @@ li {
 
 footer {
   background-color: #085cb2;
+}
+
+.product-background {
+  background-color: #D6EAFF;
 }
 
 .header-background {
