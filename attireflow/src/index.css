@@ -12,6 +12,12 @@
   --fw-medium: 500;
   --fw-semi-bold: 600;
   --fw-bold: 700;
+
+  /* Font Families */
+  --ff-lora: "Lora", serif;
+  --ff-crimson-pro: "Crimson Pro", serif;
+  --ff-crimson-text: "Crimson Text", serif;
+  --ff-inter: "Inter", serif;
 }
 
 * {
@@ -56,7 +62,11 @@ h6 {
 
 p {
   font-family: "Lora", serif;
-  color: #085cb2;
+  color: inherit;
+}
+
+li {
+  list-style: none;
 }
 
 footer {
