@@ -1,10 +1,9 @@
-
 .desktop_nav {
     width: 90%;
     height: 10rem;
     margin: 0 auto;
     padding-top: 4%;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -37,7 +36,7 @@
     font-size: 1rem;
 }
 
-.nav_icons  {
+.nav_icons {
     display: flex;
     align-items: center;
 }
@@ -49,7 +48,7 @@
 }
 
 .nav_container {
-  display: none;
+    display: none;
 }
 
 .mobile_list {
@@ -96,8 +95,7 @@
     /*used to ensure support on multiple browsers*/
     @supports (inset: 0 0 0 0) {
         .nav-container {
-        inset: 0 0 0 0;
+            inset: 0 0 0 0;
         }
     }
 }
-
