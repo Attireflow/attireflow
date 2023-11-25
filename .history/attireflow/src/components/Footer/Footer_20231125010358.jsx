@@ -1,5 +1,10 @@
 import React from "react";
 import classes from "./Footer.module.css";
+import { Input } from "antd";
+const { Search } = Input;
+
+const onSubscribe = (value, _e, info) => console.log(info?.source, value);
+
 function Footer() {
   return (
     <footer>
@@ -32,10 +37,10 @@ function Footer() {
         </div>
         <div>
           <h6>Get in touch</h6>
-          <div className={classes.input_group}>
-            <input type="text" placeholder="Enter Your Email"/>
-            <button type="submit">Subscribe</button>
-          </div>
+          <div class="input-group">
+  <input type="text" placeholder="Enter text here">
+  <button type="submit">Submit</button>
+</div>
         </div>
       </div>
     </footer>

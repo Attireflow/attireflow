@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Footer.module.css";
+
 function Footer() {
   return (
     <footer>
@@ -32,10 +33,7 @@ function Footer() {
         </div>
         <div>
           <h6>Get in touch</h6>
-          <div className={classes.input_group}>
-            <input type="text" placeholder="Enter Your Email"/>
-            <button type="submit">Subscribe</button>
-          </div>
+          <input type="email" id="" />
         </div>
       </div>
     </footer>

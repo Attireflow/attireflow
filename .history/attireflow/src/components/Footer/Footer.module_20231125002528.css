@@ -1,0 +1,9 @@
+.footer_contents {
+    font-size: 2rem;
+    text
+}
+
+.footer_icons {
+    display: flex;
+    margin-right: 5px;
+}

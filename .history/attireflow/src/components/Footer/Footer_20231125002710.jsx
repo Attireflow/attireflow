@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Footer.module.css";
+
 function Footer() {
   return (
     <footer>
@@ -15,26 +16,6 @@ function Footer() {
             <box-icon type="logo" color="white" name="whatsapp"></box-icon>
             <box-icon type="logo" color="white" name="instagram"></box-icon>
             <box-icon type="logo" color="white" name="twitter"></box-icon>
-          </div>
-        </div>
-        <div>
-          <h6>Explore All</h6>
-          <p>Home</p>
-          <p>Collections</p>
-          <p>Why Choose Us</p>
-        </div>
-        <div>
-          <h6>Quick Links</h6>
-          <p>FAQs</p>
-          <p>Reviews</p>
-          <p>Privacy Policy</p>
-          <p>About Us</p>
-        </div>
-        <div>
-          <h6>Get in touch</h6>
-          <div className={classes.input_group}>
-            <input type="text" placeholder="Enter Your Email"/>
-            <button type="submit">Subscribe</button>
           </div>
         </div>
       </div>
