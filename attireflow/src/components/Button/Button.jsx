@@ -1,12 +1,12 @@
-import clsx from "clsx";
-import classes from "./button.module.css";
+import clsx from 'clsx';
+import classes from './button.module.css';
 
-function Button({ variant = "solid", className, children }) {
+function Button({ variant = 'solid', className, children }) {
   /*
    * You can override the default styles by adding a className
    * clsx is a utility library used for handling the application of conditional CSS classes
    * */
-  const validVariantValues = ["solid", "outline"];
+  const validVariantValues = ['solid', 'outline'];
 
   const btnStyles = clsx({
     [className]: className,

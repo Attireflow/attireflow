@@ -3,7 +3,7 @@
   --brand-color-1: #2d5584;
   --brand-color-2: #dbebff;
   --brand-color-3: #67abd1;
-
+  --brand-color-4: #085CB2;
   /* Neutral colors */
   --white: #ffffff;
 
@@ -24,6 +24,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 body {
@@ -81,4 +82,8 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+button {
+  cursor: pointer;
 }
