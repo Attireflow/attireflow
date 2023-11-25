@@ -67,12 +67,12 @@
 
 @media only screen and (max-width: 768px) {
     .footer_contents div > * {
-        margin-bottom: 25px;
+        margin-bottom: 30px;
     }
     
     .input_group input,
     .input_group button[type="submit"] {
-        padding: 5px;
+        padding: 0;
     }
 
     .input_group input {

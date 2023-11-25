@@ -8,14 +8,13 @@
     display: flex;
     width: 50%;
     justify-content: space-between;
-    padding: 0 80px;
+    padding: 0 ;
 }
 
 @media only screen and (max-width: 786px) {
-    .footer_content {
+    /* .footer_contents {
         flex-direction: column;
-        padding: 0;
-    }
+    } */
 }
 
 .footer_contents div > * {
@@ -67,22 +66,24 @@
 
 @media only screen and (max-width: 768px) {
     .footer_contents div > * {
-        margin-bottom: 25px;
+        margin-bottom: 30px;
+    }
+
+    .footer_contents {
+        
     }
     
     .input_group input,
-    .input_group button[type="submit"] {
-        padding: 5px;
+    .input_group button {
+        padding: 5px 8px;
     }
 
     .input_group input {
-        width: 100%;
-        font-size: 1rem;
+        width: 50%;
     }
 
     .input_group button {
         width: 40%;
-        font-size: 1rem;
     }
 
 

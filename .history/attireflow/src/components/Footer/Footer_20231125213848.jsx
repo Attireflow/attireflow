@@ -25,7 +25,7 @@ function Footer() {
             <p>Why Choose Us</p>
           </div>
         </div>
-        <div className={classes.footer_content}>
+        <div>
           <div>
             <h6>Quick Links</h6>
             <p>FAQs</p>

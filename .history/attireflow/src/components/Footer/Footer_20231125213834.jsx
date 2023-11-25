@@ -4,7 +4,8 @@ function Footer() {
   return (
     <footer>
       <div className={classes.footer_contents}>
-        <div className={classes.footer_content}>
+        <div clas
+        >
           <div>
             <h1>ATTIREFLOW</h1>
             <span className={classes.footer_icons}>
@@ -25,7 +26,7 @@ function Footer() {
             <p>Why Choose Us</p>
           </div>
         </div>
-        <div className={classes.footer_content}>
+        <div>
           <div>
             <h6>Quick Links</h6>
             <p>FAQs</p>
