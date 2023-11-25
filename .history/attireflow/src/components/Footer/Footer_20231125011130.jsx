@@ -1,5 +1,9 @@
 import React from "react";
 import classes from "./Footer.module.css";
+import { Input } from "antd";
+const { Search } = Input;
+
+const onSubscribe = (value, _e, info) => console.log(info?.source, value);
 
 function Footer() {
   return (

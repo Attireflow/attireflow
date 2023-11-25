@@ -1,0 +1,14 @@
+.footer_contents {
+    color: white;
+}
+
+foo
+
+.footer_contents h1 {
+    font-size: 2rem;
+}
+
+.footer_icons {
+    display: flex;
+    margin-right: 5px;
+}

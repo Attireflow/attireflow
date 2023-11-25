@@ -1,5 +1,16 @@
 import React from "react";
 import classes from "./Footer.module.css";
+import { Input, Space } from "antd";
+const { Search } = Input;
+const suffix = (
+  <AudioOutlined
+    style={{
+      fontSize: 16,
+      color: "#1677ff",
+    }}
+  />
+);
+const onSearch = (value, _e, info) => console.log(info?.source, value);
 
 function Footer() {
   return (
@@ -33,10 +44,13 @@ function Footer() {
         </div>
         <div>
           <h6>Get in touch</h6>
-          <div className={classes.input_group}>
-            <input type="text" placeholder="Enter Your Email"/>
-            <button type="submit">Subscribe</button>
-          </div>
+          <Search
+            placeholder="input search text"
+            allowClear
+            enterButton=""
+            size="large"
+            onSearch={onSearch}
+          />
         </div>
       </div>
     </footer>
