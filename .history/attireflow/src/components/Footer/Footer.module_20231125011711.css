@@ -1,18 +1,13 @@
 .footer_contents {
     display: flex;
     justify-content: space-evenly;
-    height: 100%;
-    padding: 5%;
+    he
 }
 
-@media only screen and (max-width: 786px) {
-    .footer_contents {
-        flex-direction: column;
-    }
-}
-
-.footer_contents div > * {
-    margin-bottom: 40px;
+.footer_contents div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .footer_contents * {
@@ -24,7 +19,7 @@
 }
 
 .footer_contents p {
-    font-size: .8rem;
+    font-size: .6rem;
     font-family:  "Inter", sans-serif;;
 }
 

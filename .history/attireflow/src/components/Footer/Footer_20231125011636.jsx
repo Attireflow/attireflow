@@ -7,7 +7,7 @@ function Footer() {
       <div className={classes.footer_contents}>
         <div>
           <h1>ATTIREFLOW</h1>
-          <span className={classes.footer_icons}>
+          <div className={classes.footer_icons}>
             <box-icon
               type="logo"
               color="white"
@@ -16,7 +16,7 @@ function Footer() {
             <box-icon type="logo" color="white" name="whatsapp"></box-icon>
             <box-icon type="logo" color="white" name="instagram"></box-icon>
             <box-icon type="logo" color="white" name="twitter"></box-icon>
-          </span>
+          </div>
         </div>
         <div>
           <h6>Explore All</h6>

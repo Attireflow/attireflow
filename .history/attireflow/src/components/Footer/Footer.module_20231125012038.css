@@ -5,11 +5,7 @@
     padding: 5%;
 }
 
-@media only screen and (max-width: 786px) {
-    .footer_contents {
-        flex-direction: column;
-    }
-}
+
 
 .footer_contents div > * {
     margin-bottom: 40px;
