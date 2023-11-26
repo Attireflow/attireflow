@@ -7,7 +7,7 @@ function Contact() {
 
   const fillForm = (e, value) => {
     setForm((prevState) => {
-      {value: e}
+      {value : e}}
     })
   }
 

@@ -5,12 +5,6 @@ import classes from "./Contact.module.css";
 function Contact() {
   const [form, setForm] = useState({name: "", email: "", message: ""});
 
-  const fillForm = (e, value) => {
-    setForm((prevState) => {
-      {value: e}
-    })
-  }
-
 
   return (
     <div className={classes.contact_section}>
@@ -29,8 +23,7 @@ function Contact() {
               name="name"
               placeholder="&#x1F464; Enter your name"
               required
-              value={form.name}
-              onChange={(e) => fillForm(e.target.value, value)}
+              value={}
             />
           </div>
           <div className={classes.form_group}>
@@ -40,8 +33,6 @@ function Contact() {
               name="email"
               placeholder="&#x2709; Enter your email"
               required
-              value={form.email}
-              onChange={(e) => fillForm(e.target.value, value)}
             />
           </div>
           <div className={classes.form_group}>
@@ -51,8 +42,6 @@ function Contact() {
               placeholder="&#x1F4AC; Enter your message"
               rows="4"
               required
-              value={form.message}
-              onChange={(e) => fillForm(e.target.value, value)}
             ></textarea>
           </div>
           <button type="submit">Send</button>

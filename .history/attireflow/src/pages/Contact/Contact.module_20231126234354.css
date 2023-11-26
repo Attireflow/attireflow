@@ -5,14 +5,10 @@
   padding: 12rem 0;
 }
 
-.contact_section h1 {
-    font-size: 6rem;
-}
 
-.contact_section h1, 
-.contact_section h2 {
+.contact_sect h1 {
     text-align: center;
-    margin: 30px 0;
+    margin-top: 30px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -54,11 +50,10 @@ textarea {
 }
 
 button {
-  padding: 15px 15px;
+  padding: 8px 15px;
   border: none;
-  border-radius: 10px;
+  border-radius: 4px;
   background-color: #007bff;
   color: white;
   cursor: pointer;
-  width: 100%;
 }

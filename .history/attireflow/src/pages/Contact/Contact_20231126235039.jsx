@@ -5,12 +5,6 @@ import classes from "./Contact.module.css";
 function Contact() {
   const [form, setForm] = useState({name: "", email: "", message: ""});
 
-  const fillForm = (e, value) => {
-    setForm((prevState) => {
-      {value: e}
-    })
-  }
-
 
   return (
     <div className={classes.contact_section}>
