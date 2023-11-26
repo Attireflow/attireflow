@@ -10,7 +10,7 @@ function Contact() {
         </div>
       </div>
       <div className={classes.contact_form}>
-        <form>
+        <form className={classes.contact_form}>
           <div className={classes.form_group}>
             <label for="name">Name:</label>
             <input

@@ -9,8 +9,8 @@ function Contact() {
           <h1>CONTACT US</h1>
         </div>
       </div>
-      <div className={classes.contact_form}>
-        <form>
+      <div>
+        <form className={classes.contact_form}>
           <div className={classes.form_group}>
             <label for="name">Name:</label>
             <input
