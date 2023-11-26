@@ -2,30 +2,10 @@ import { useState } from "react";
 import classes from "./Contact.module.css";
 
 
-const Input = ({ placeholder, name, type, handleForm, value }) => {
-  return (
-    <input
-      placeholder={placeholder}
-      name={name}
-      type={type}
-      value={value}
-      onChange={(e) => handleForm(e, name)}
-    />
-  );
-};
-
-
 function Contact() {
   const [form, setForm] = useState({name: "", email: "", message: ""});
 
-  const handleForm = (e, name) =>
-    setForm((prevState) => ({ ...prevState, [name]: e.target.value }));
-
-  const submitForm = (e) => {
-    e.preventDefault();
-
-    setForm({ name: "", email: "", message: "" });
-  }
+  const fillForm = (e, name) => setForm((prevState) => ({ ...prevState, []: e.target.value }));
 
 
   return (
@@ -37,33 +17,39 @@ function Contact() {
       </div>
       <div className={classes.contact_form}>
         <h2>Contact Form</h2>
-        <form onSubmit={(e) => submitForm(e)}>
+        <form>
           <div className={classes.form_group}>
-            <Input
-              placeholder="Enter Your Name"
+            <input
+              type="text"
+              id="name"
               name="name"
-              type="text"
+              placeholder="&#x1F464; Enter your name"
+              required
               value={form.name}
-              handleForm={handleForm}
+              onChange={(e) => fillForm(e.target.value, name)}
             />
           </div>
           <div className={classes.form_group}>
-            <Input
-              placeholder="Enter Your Email"
+            <input
+              type="email"
+              id="email"
               name="email"
-              type="text"
+              placeholder="&#x2709; Enter your email"
+              required
               value={form.email}
-              handleForm={handleForm}
+              onChange={(e) => fillForm(e.target.value, name)}
             />
           </div>
           <div className={classes.form_group}>
-            <Input
-              placeholder="Enter Your Message"
+            <textarea
+              id="message"
               name="message"
-              type="text"
+              placeholder="&#x1F4AC; Enter your message"
+              rows="4"
+              required
               value={form.message}
-              handleForm={handleForm}
-            />
+              onChange={(e) => fillForm(e.target.value, name)}
+            ></textarea>
           </div>
           <button type="submit">Send</button>
         </form>

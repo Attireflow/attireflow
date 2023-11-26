@@ -43,7 +43,7 @@ function Contact() {
               placeholder="Enter Your Name"
               name="name"
               type="text"
-              value={form.name}
+              value={}
               handleForm={handleForm}
             />
           </div>
@@ -52,7 +52,6 @@ function Contact() {
               placeholder="Enter Your Email"
               name="email"
               type="text"
-              value={form.email}
               handleForm={handleForm}
             />
           </div>
@@ -61,7 +60,6 @@ function Contact() {
               placeholder="Enter Your Message"
               name="message"
               type="text"
-              value={form.message}
               handleForm={handleForm}
             />
           </div>

@@ -2,13 +2,12 @@ import { useState } from "react";
 import classes from "./Contact.module.css";
 
 
-const Input = ({ placeholder, name, type, handleForm, value }) => {
+const Input = ({ placeholder, name, type, handleForm }) => {
   return (
     <input
       placeholder={placeholder}
       name={name}
       type={type}
-      value={value}
       onChange={(e) => handleForm(e, name)}
     />
   );
@@ -21,11 +20,7 @@ function Contact() {
   const handleForm = (e, name) =>
     setForm((prevState) => ({ ...prevState, [name]: e.target.value }));
 
-  const submitForm = (e) => {
-    e.preventDefault();
 
-    setForm({ name: "", email: "", message: "" });
-  }
 
 
   return (
@@ -37,33 +32,33 @@ function Contact() {
       </div>
       <div className={classes.contact_form}>
         <h2>Contact Form</h2>
-        <form onSubmit={(e) => submitForm(e)}>
+        <form>
           <div className={classes.form_group}>
             <Input
               placeholder="Enter Your Name"
               name="name"
               type="text"
-              value={form.name}
               handleForm={handleForm}
             />
           </div>
           <div className={classes.form_group}>
             <Input
-              placeholder="Enter Your Email"
-              name="email"
+              placeholder="Enter Your Name"
+              name="name"
               type="text"
-              value={form.email}
               handleForm={handleForm}
             />
           </div>
           <div className={classes.form_group}>
-            <Input
-              placeholder="Enter Your Message"
+            <textarea
+              id="message"
               name="message"
-              type="text"
+              placeholder="&#x1F4AC; Enter your message"
+              rows="4"
+              required
               value={form.message}
-              handleForm={handleForm}
-            />
+              onChange={(e) => fillForm(e.target.value, name)}
+            ></textarea>
           </div>
           <button type="submit">Send</button>
         </form>

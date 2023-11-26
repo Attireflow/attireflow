@@ -2,13 +2,12 @@ import { useState } from "react";
 import classes from "./Contact.module.css";
 
 
-const Input = ({ placeholder, name, type, handleForm, value }) => {
+const Input = ({ placeholder, name, type, handleForm }) => {
   return (
     <input
       placeholder={placeholder}
       name={name}
       type={type}
-      value={value}
       onChange={(e) => handleForm(e, name)}
     />
   );
@@ -43,7 +42,6 @@ function Contact() {
               placeholder="Enter Your Name"
               name="name"
               type="text"
-              value={form.name}
               handleForm={handleForm}
             />
           </div>
@@ -52,7 +50,6 @@ function Contact() {
               placeholder="Enter Your Email"
               name="email"
               type="text"
-              value={form.email}
               handleForm={handleForm}
             />
           </div>
@@ -61,7 +58,6 @@ function Contact() {
               placeholder="Enter Your Message"
               name="message"
               type="text"
-              value={form.message}
               handleForm={handleForm}
             />
           </div>

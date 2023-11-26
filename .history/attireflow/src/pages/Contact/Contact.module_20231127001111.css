@@ -33,11 +33,7 @@
   padding: 50px;
 }
 
-@media only screen and (max-width: 500px) {
-    .contact_form {
-        padding: 10px;
-    }
-}
+@media only
 
 .form_group {
   margin-bottom: 55px;

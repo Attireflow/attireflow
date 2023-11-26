@@ -52,7 +52,6 @@ function Contact() {
               placeholder="Enter Your Email"
               name="email"
               type="text"
-              value={form.email}
               handleForm={handleForm}
             />
           </div>
@@ -61,7 +60,6 @@ function Contact() {
               placeholder="Enter Your Message"
               name="message"
               type="text"
-              value={form.message}
               handleForm={handleForm}
             />
           </div>
