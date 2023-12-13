@@ -5,7 +5,7 @@
 
 .img {
   height: 309px;
-  background-color: var(--brand-color-2);
+  /* background-color: var(--brand-color-2); */
   border-radius: 10px;
   position: relative;
 

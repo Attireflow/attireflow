@@ -6,8 +6,10 @@ import { MdFavorite, MdFavoriteBorder } from "react-icons/md";
 import { useState } from "react";
 
 function ProductCard({ product }) {
-  const { title, price } = product;
+  const { image, name, price, rate } = product;
   const [isFavorite, setIsFavorite] = useState(false);
+
+  
   return (
     <div className={classes.card}>
       <div className={classes.img}>
@@ -21,15 +23,16 @@ function ProductCard({ product }) {
             <MdFavoriteBorder size="1.5rem" />
           )}
         </span>
+        <img src={image} alt="products" />
       </div>
       <div>
-        <p>{title}</p>
+        <p>{name}</p>
         <p>
           <span>N</span>
           {price}
         </p>
         <Rating
-          initialRating={4}
+          initialRating={rate}
           emptySymbol={<FaRegStar size="1.5rem" />}
           fullSymbol={<FaStar size="1.5rem" />}
         />
