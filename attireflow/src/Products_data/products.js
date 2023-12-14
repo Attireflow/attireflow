@@ -6,6 +6,7 @@ const Products = [
     price: 19000,
     rate: 3,
     id: 1,
+    amount: 1
   },
   {
     image:
@@ -14,6 +15,7 @@ const Products = [
     price: 12000,
     rate: 5,
     id: 2,
+    amount: 1
   },
   {
     image:
@@ -22,6 +24,7 @@ const Products = [
     price: 20000,
     rate: 1,
     id: 3,
+    amount: 1
   },
   {
     image:
@@ -30,6 +33,7 @@ const Products = [
     price: 19000,
     rate: 4,
     id: 4,
+    amount: 1
   },
   {
     image:
@@ -38,6 +42,7 @@ const Products = [
     price: 11000,
     rate: 3,
     id: 5,
+    amount: 1
   },
   {
     image:
@@ -46,6 +51,7 @@ const Products = [
     price: 15000,
     rate: 5,
     id: 6,
+    amount: 1
   },
   {
     image:
@@ -54,6 +60,7 @@ const Products = [
     price: 10000,
     rate: 4,
     id: 7,
+    amount: 1
   },
   {
     image:
@@ -62,6 +69,7 @@ const Products = [
     price: 12000,
     rate: 5,
     id: 8,
+    amount: 1
   },
   {
     image:
@@ -70,6 +78,7 @@ const Products = [
     price: 15000,
     rate: 4,
     id: 9,
+    amount: 1
   },
   {
     image:
@@ -78,6 +87,7 @@ const Products = [
     price: 19000,
     rate: 5,
     id: 10,
+    amount: 1
   },
   {
     image:
@@ -86,6 +96,7 @@ const Products = [
     price: 15000,
     rate: 5,
     id: 11,
+    amount: 1
   },
   {
     image:
@@ -94,6 +105,7 @@ const Products = [
     price: 14000,
     rate: 3,
     id: 12,
+    amount: 1
   },
 ];
 

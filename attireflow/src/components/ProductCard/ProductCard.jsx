@@ -4,10 +4,13 @@ import Rating from "react-rating";
 import { FaRegStar, FaStar } from "react-icons/fa";
 import { MdFavorite, MdFavoriteBorder } from "react-icons/md";
 import { useState } from "react";
+import { useGlobalContext } from "/src/controller/context";
+import { Link } from "react-router-dom";
 
 function ProductCard({ product }) {
-  const { image, name, price, rate } = product;
+  const { image, name, price, rate, id } = product;
   const [isFavorite, setIsFavorite] = useState(false);
+  const { addToProductDetails } = useGlobalContext();
 
   
   return (
@@ -36,7 +39,11 @@ function ProductCard({ product }) {
           emptySymbol={<FaRegStar size="1.5rem" />}
           fullSymbol={<FaStar size="1.5rem" />}
         />
-        <Button variant="outline">Add to cart</Button>
+        <Link to="/product-details" style={{ textDecoration: "none" }}>
+          <Button variant="outline" onClick={() => addToProductDetails(id)}>
+            View
+          </Button>
+        </Link>
       </div>
     </div>
   );

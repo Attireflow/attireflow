@@ -12,6 +12,7 @@ const AppContext = createContext();
 function Context({ children }) {
   const [products, setProducts] = useState([]);
   const [homeProducts, setHomeProducts] = useState([]);
+  const [productDetails, setProductDetails] = useState([]);
 
   useEffect(() => {
     populateProducts(Products);
@@ -27,10 +28,34 @@ function Context({ children }) {
 
     setHomeProducts(filteredProducts);
   });
+
+  const addToProductDetails = (id) => {
+    const filteredProduct = products.filter((product) => product.id === id);
+    setProductDetails(filteredProduct);
+  }
+
+  const selectAmount = (num, id) => {
+    const productAmountEdit = productDetails.map((item) => {
+      if (item.id === id) {
+        item = { ...item, amount: num };
+      }
+      return item;
+    });
+    
+    setProductDetails(productAmountEdit);
+  }
   
 
   return (
-    <AppContext.Provider value={{ homeProducts, products }}>
+    <AppContext.Provider
+      value={{
+        homeProducts,
+        products,
+        addToProductDetails,
+        productDetails,
+        selectAmount,
+      }}
+    >
       {children}
     </AppContext.Provider>
   );

@@ -5,6 +5,7 @@ import customerSupport from "assets/customer_support.svg";
 import qualityTag from "assets/quality_tag.svg";
 import paymentCard from "assets/payment_card.svg";
 import reviewImg from "assets/review_image.png";
+import HomeProducts from "components/HomeProducts/HomeProducts";
 
 function Landing() {
   const { homeProducts } = useGlobalContext();
@@ -72,52 +73,7 @@ function Landing() {
       </div>
       <div className={classes.product_section}>
         <h3>Several unique attires are new in stock</h3>
-        <div className={classes.products}>
-          {homeProducts.map((item) => {
-            const { image, name, price, rate, id } = item;
-            return (
-              <div className={classes.product} key={id}>
-                <div className={`${classes.product_img}`}>
-                  <img src={image} alt="product" />
-                  <div className={classes.heart}>
-                    <box-icon name="heart" color="#085cb2"></box-icon>
-                  </div>
-                </div>
-                <p>{name}</p>
-                <p>&#x20A6; {price}</p>
-
-                <div className={classes.rates}>
-                  {Array.from([...Array(5)], (_, i) => {
-                    return (
-                      <p>
-                        <box-icon
-                          name="star"
-                          type="solid"
-                          color="orange"
-                        ></box-icon>
-                      </p>
-                    );
-                  })
-                    .splice(0, rate)
-                    .concat(
-                      [...Array(5 - rate)].map((_, i) => {
-                        return (
-                          <p>
-                            <box-icon
-                              name="star"
-                              type="solid"
-                              color="#D6EAFF"
-                            ></box-icon>
-                          </p>
-                        );
-                      })
-                    )}
-                </div>
-                <button className={classes.product_btn}>Shop Now</button>
-              </div>
-            );
-          })}
-        </div>
+        <HomeProducts/>
       </div>
       <div className={classes.services_section}>
         <h3>

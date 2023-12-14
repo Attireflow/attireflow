@@ -2,22 +2,27 @@ import Checkout from 'pages/Checkout/Checkout';
 import Product from 'pages/Products/Products';
 import Contact from 'pages/Contact/Contact';
 import Privacy from 'pages/Privacy/Privacy';
+import ProductDetails from 'pages/Product_details/ProductDetails';
 
 export const publicRoutes = [
   {
-    path: 'products',
+    path: "products",
     element: <Product />,
   },
   {
-    path: 'checkout',
+    path: "product-details",
+    element: <ProductDetails/>
+  },
+  {
+    path: "checkout",
     element: <Checkout />,
   },
   {
-    path: 'contact-us',
+    path: "contact-us",
     element: <Contact />,
   },
   {
-    path: 'privacy',
+    path: "privacy",
     element: <Privacy />,
   },
 ];
