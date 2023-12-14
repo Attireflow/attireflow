@@ -103,7 +103,7 @@ function Nav() {
               ></box-icon>
             </Link>
             <hr />
-            <Link>
+            <Link to="/product-details">
               <box-icon
                 name="shopping-bag"
                 color="#085CB2"
