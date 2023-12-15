@@ -7,10 +7,10 @@ import { FaRegStar, FaStar } from "react-icons/fa";
 import Carousel from 'components/ProductCarousel/Carousel';
 
 function ProductDetails() {
-  const { productDetails, selectAmount } = useGlobalContext();
+  const { productDetails, selectAmount, addToCart } = useGlobalContext();
 
   return (
-    <>
+    <div>
       <div className={classes.details_section}>
         <div className={classes.links}>
           <Link to="/">
@@ -26,7 +26,7 @@ function ProductDetails() {
           {productDetails.map((product) => {
             const { image, price, name, rate, id, amount } = product;
             return (
-              <section>
+              <section key={id}>
                 <div className={classes.product_section}>
                   <div className={classes.img}>
                     <img src={image} alt="product" />
@@ -78,7 +78,7 @@ function ProductDetails() {
                       <span>Delivery within 3 to 4 working days</span>
                     </div>
                     <div className={classes.details_buttons}>
-                      <button className={classes.addToCartBtn}>
+                      <button className={classes.addToCartBtn} onClick={() => addToCart(id)}>
                         <h1>Add to Cart</h1>
                       </button>
                       <div
@@ -136,7 +136,7 @@ function ProductDetails() {
           })}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

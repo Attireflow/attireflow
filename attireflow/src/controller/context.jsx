@@ -13,6 +13,7 @@ function Context({ children }) {
   const [products, setProducts] = useState([]);
   const [homeProducts, setHomeProducts] = useState([]);
   const [productDetails, setProductDetails] = useState([]);
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     populateProducts(Products);
@@ -32,6 +33,7 @@ function Context({ children }) {
   const addToProductDetails = (id) => {
     const filteredProduct = products.filter((product) => product.id === id);
     setProductDetails(filteredProduct);
+    window.scroll(0, 10);
   }
 
   const selectAmount = (num, id) => {
@@ -44,6 +46,10 @@ function Context({ children }) {
     
     setProductDetails(productAmountEdit);
   }
+
+  const addToCart = (id) => {
+    setCart((prevState => [...prevState, ...productDetails]));
+  }
   
 
   return (
@@ -54,6 +60,8 @@ function Context({ children }) {
         addToProductDetails,
         productDetails,
         selectAmount,
+        cart,
+        addToCart
       }}
     >
       {children}
