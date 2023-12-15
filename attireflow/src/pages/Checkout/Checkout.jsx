@@ -16,7 +16,6 @@ function Checkout() {
         </Link>
         /
         <p>Check Out</p>
-      
       </div>
       <div className={classes.checkoutDetails_section}>
         <section className={classes.left_section}>

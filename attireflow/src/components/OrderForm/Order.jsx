@@ -145,10 +145,10 @@ function Order() {
           <p>Total</p>
           <p>{total}</p>
         </div>
+        <button type="submit" className={classes.submit_btn}>
+            Submit
+        </button>
       </div>
-      <button type="submit" className={classes.submit_btn}>
-        Submit
-      </button>
     </div>
   );
 }

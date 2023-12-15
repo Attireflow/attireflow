@@ -18,6 +18,12 @@
     
 }
 
+@media only screen and (max-width: 500px) {
+    .cart_product {
+        padding: 10px;
+    }
+}
+
 .cart_product img {
     width: 100px;
 }
