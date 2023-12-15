@@ -9,6 +9,26 @@ import Carousel from 'components/ProductCarousel/Carousel';
 function ProductDetails() {
   const { productDetails, selectAmount, addToCart } = useGlobalContext();
 
+  if (productDetails.length === 0) {
+    return (
+      <div
+        className={classes.details_section}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <h1 style={{ textAlign: "center", color: "#085CB2", fontSize: "3rem" }}>
+          Select A Product To See More Details
+        </h1>
+        <Link to="/products">
+          <button className={classes.review_btn}>View Products</button>
+        </Link>
+      </div>
+    );
+  }
+
   return (
     <div>
       <div className={classes.details_section}>
@@ -17,10 +37,8 @@ function ProductDetails() {
             <p>Home </p>{" "}
           </Link>
           /
-          <Link to="/products">
-            {" "}
-            <p>New in stock</p>
-          </Link>
+          <p>New in stock</p>
+          
         </div>
         <div>
           {productDetails.map((product) => {
@@ -78,9 +96,14 @@ function ProductDetails() {
                       <span>Delivery within 3 to 4 working days</span>
                     </div>
                     <div className={classes.details_buttons}>
-                      <button className={classes.addToCartBtn} onClick={() => addToCart(id)}>
-                        <h1>Add to Cart</h1>
-                      </button>
+                      <Link to="/checkout">
+                        <button
+                          className={classes.addToCartBtn}
+                          onClick={addToCart}
+                        >
+                          <h1>Add to Cart</h1>
+                        </button>
+                      </Link>
                       <div
                         style={{
                           display: "flex",
@@ -88,7 +111,7 @@ function ProductDetails() {
                           width: "100%",
                         }}
                       >
-                        <Link to="/check-out" className={classes.checkoutBtn}>
+                        <Link to="/checkout" className={classes.checkoutBtn}>
                           <button>
                             <h1>Check Out</h1>
                           </button>
@@ -99,9 +122,7 @@ function ProductDetails() {
                         >
                           <button>
                             {" "}
-                            <h1>
-                              Continue Shopping
-                            </h1>
+                            <h1>Continue Shopping</h1>
                           </button>
                         </Link>
                       </div>
@@ -112,7 +133,7 @@ function ProductDetails() {
                   <h3>Customer Review</h3>
                   <div className={classes.review_details}>
                     <div className={classes.review}>
-                      <div className={classes.review_box}>{ " " }</div>
+                      <div className={classes.review_box}> </div>
                     </div>
                     <div className={classes.review}>
                       <Rating
@@ -129,7 +150,7 @@ function ProductDetails() {
                 </div>
                 <div className={classes.other_collections}>
                   <h3>More from Collection</h3>
-                  <Carousel/>
+                  <Carousel />
                 </div>
               </section>
             );
