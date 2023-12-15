@@ -106,13 +106,41 @@ h3 {
   justify-content: space-between;
 }
 
-.collection_product {
+.collection_one {
+  background: url(../../assets/clothOne.png);  
+}
+
+.collection_two {
+  background: url(../../assets/clothTwo.png);
+}
+
+.collection_three {
+  background: url(../../assets/clothThree.png);
+}
+
+.collection_four {
+  background: url(../../assets/clothFour.png);
+}
+
+.collection_five {
+  background: url(../../assets/clothFive.png);
+}
+
+.collection_one,
+.collection_two,
+.collection_three,
+.collection_four,
+.collection_five {
+  background-position: center;
+  background-size: cover;
   width: min(47%, 50rem);
   height: 19rem;
   border-radius: 15px;
   padding: 10px 0;
   margin-bottom: 5rem;
 }
+
+
 
 .collection_product p {
   margin: 20px;

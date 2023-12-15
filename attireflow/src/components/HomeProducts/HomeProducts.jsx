@@ -1,6 +1,7 @@
 import React from 'react'
 import { useGlobalContext } from '/src/controller/context';
 import classes from "./HomeProduct.module.css";
+import { Link } from 'react-router-dom';
 
 function HomeProducts() {
     const { homeProducts } = useGlobalContext();
@@ -12,9 +13,9 @@ function HomeProducts() {
           <div className={classes.product} key={id}>
             <div className={`${classes.product_img}`}>
               <img src={image} alt="product" />
-              <div className={classes.heart}>
+              {/* <div className={classes.heart}>
                 <box-icon name="heart" color="#085cb2"></box-icon>
-              </div>
+              </div> */}
             </div>
             <p>{name}</p>
             <p>&#x20A6; {price}</p>
@@ -46,7 +47,9 @@ function HomeProducts() {
                   })
                 )}
             </div>
-            <button className={classes.product_btn}>Shop Now</button>
+            <Link to="/products">
+              <button className={classes.product_btn}>Shop Now</button>
+            </Link>
           </div>
         );
       })}

@@ -8,7 +8,7 @@ import reviewImg from "assets/review_image.png";
 import HomeProducts from "components/HomeProducts/HomeProducts";
 
 function Landing() {
-  const { homeProducts } = useGlobalContext();
+  
   return (
     <main className={classes.home}>
       <div className="header-background">
@@ -45,27 +45,27 @@ function Landing() {
           Explore Our Unique Collection of Exclusive <br /> Categories
         </h3>
         <div className={classes.collections}>
-          <div className={`${classes.collection_product} product-background`}>
+          <div className={`${classes.collection_one}`}>
             <p>Cord Lace Attire</p>
             <p>200+</p>
           </div>
-          <div className={`${classes.collection_product} product-background`}>
+          <div className={`${classes.collection_two}`}>
             <p>Kampala Attire</p>
             <p>250+</p>
           </div>
         </div>
         <div className={classes.mid_collection}>
-          <div className={`${classes.collection_product} product-background`}>
+          <div className={`${classes.collection_three}`}>
             <p>Ankara Attire</p>
             <p>1000+</p>
           </div>
         </div>
         <div className={classes.collections}>
-          <div className={`${classes.collection_product} product-background`}>
+          <div className={`${classes.collection_four}`}>
             <p>Plain Cashmere Attire</p>
             <p>500+</p>
           </div>
-          <div className={`${classes.collection_product} product-background`}>
+          <div className={`${classes.collection_five}`}>
             <p>Checkers Cashmere Attire</p>
             <p>500+</p>
           </div>
@@ -73,7 +73,7 @@ function Landing() {
       </div>
       <div className={classes.product_section}>
         <h3>Several unique attires are new in stock</h3>
-        <HomeProducts/>
+        <HomeProducts />
       </div>
       <div className={classes.services_section}>
         <h3>
@@ -128,15 +128,16 @@ function Landing() {
             At Attireflow, we are passionate about celebrating cultural
             diversity through fashion. Our mission is to provide authentic and
             high-quality native attire that honors traditions and craftsmanship
-            from around the world. <br /> <br /> <br /> With a commitment to preserving
-            heritage, we curate a collection that reflects the beauty, elegance,
-            and uniqueness of each culture's attire. We take pride in delivering
-            a seamless shopping experience, making it easy for you to explore
-            and embrace the world's rich clothing traditions. <br /> <br /> <br /> Join
-            us on this journey of cultural appreciation, and let us be your
-            gateway to the global tapestry of fashion. <br /> <br /> <br />Thank you
-            for choosing Attireflow as your destination for meaningful and
-            stylish attire.
+            from around the world. <br /> <br /> <br /> With a commitment to
+            preserving heritage, we curate a collection that reflects the
+            beauty, elegance, and uniqueness of each culture's attire. We take
+            pride in delivering a seamless shopping experience, making it easy
+            for you to explore and embrace the world's rich clothing traditions.{" "}
+            <br /> <br /> <br /> Join us on this journey of cultural
+            appreciation, and let us be your gateway to the global tapestry of
+            fashion. <br /> <br /> <br />
+            Thank you for choosing Attireflow as your destination for meaningful
+            and stylish attire.
           </p>
         </div>
       </div>
