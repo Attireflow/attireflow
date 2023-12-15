@@ -47,10 +47,9 @@ function Context({ children }) {
     setProductDetails(productAmountEdit);
   }
 
-  const addToCart = (id) => {
+  const addToCart = () => {
     setCart((prevState => [...prevState, ...productDetails]));
   }
-  
 
   return (
     <AppContext.Provider
