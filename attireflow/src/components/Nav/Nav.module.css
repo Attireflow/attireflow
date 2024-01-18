@@ -57,6 +57,16 @@
     list-style: none;
 }
 
+.mobile_list li {
+    padding: 20px;
+}
+
+.mobile_list li p {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
 .open_icon {
     display: none;
 }

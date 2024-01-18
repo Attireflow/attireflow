@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Footer.module.css";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer>
@@ -20,17 +21,25 @@ function Footer() {
           </div>
           <div>
             <h6>Explore All</h6>
-            <p>Home</p>
-            <p>Collections</p>
+            <p>
+              <Link to="/">Home</Link>
+            </p>
+            <p>
+              <Link to="products">Collections</Link>
+            </p>
             <p>Why Choose Us</p>
           </div>
         </div>
         <div className={classes.footer_content}>
           <div>
             <h6>Quick Links</h6>
-            <p>FAQs</p>
+            <p>
+              <Link to="/privacy">FAQ</Link>
+            </p>
             <p>Reviews</p>
-            <p>Privacy Policy</p>
+            <p>
+              <Link to="/privacy">Privacy Policy</Link>
+            </p>
             <p>About Us</p>
           </div>
           <div>
