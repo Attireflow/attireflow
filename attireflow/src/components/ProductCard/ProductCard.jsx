@@ -8,7 +8,7 @@ import { useGlobalContext } from "/src/controller/context";
 import { Link } from "react-router-dom";
 
 function ProductCard({ product }) {
-  const { image, name, price, rate, id } = product;
+  const { image, name, type, price, rate, id } = product;
   const [isFavorite, setIsFavorite] = useState(false);
   const { addToProductDetails } = useGlobalContext();
 
@@ -30,6 +30,7 @@ function ProductCard({ product }) {
       </div>
       <div>
         <p>{name}</p>
+        <p>{type}</p>
         <p>
           <span>N</span>
           {price}
