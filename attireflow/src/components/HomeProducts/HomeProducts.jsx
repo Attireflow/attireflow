@@ -8,7 +8,7 @@ function HomeProducts() {
   return (
     <div className={classes.products}>
       {homeProducts.map((item) => {
-        const { image, name, price, rate, id } = item;
+        const { image, name, type, price, rate, id } = item;
         return (
           <div className={classes.product} key={id}>
             <div className={`${classes.product_img}`}>
@@ -18,6 +18,7 @@ function HomeProducts() {
               </div> */}
             </div>
             <p>{name}</p>
+            <p>{type}</p>
             <p>&#x20A6; {price}</p>
 
             <div className={classes.rates}>

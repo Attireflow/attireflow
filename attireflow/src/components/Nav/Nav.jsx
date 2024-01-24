@@ -36,36 +36,22 @@ function Nav() {
         <div>
           <div>
             <ul className={Nav_css.mobile_list}>
-              <li>
+              <li onClick={closeNav}>
                 <Link to="/" style={{ textDecorationLine: "none" }}>
                   <p>Home</p>
                 </Link>
               </li>
-              <li>
+              <li onClick={closeNav}>
                 <NavLink to="products" style={{ textDecorationLine: "none" }}>
                   <p>Shop</p>
                 </NavLink>
               </li>
-              <li>
+              <li onClick={closeNav}>
                 <NavLink to="contact-us" style={{ textDecorationLine: "none" }}>
                   <p>Contact Us</p>
                 </NavLink>
               </li>
             </ul>
-          </div>
-          <div className="mt-10">
-            <Link to={"/tray"}>
-              <button onClick={closeNav}>
-                <box-icon
-                  name="shopping-bag"
-                  color="#085CB2"
-                  size="md"
-                  animation="tada-hover"
-                  style={{ cursor: "pointer" }}
-                ></box-icon>
-                <span>Your Cart</span>
-              </button>
-            </Link>
           </div>
         </div>
         <hr />
